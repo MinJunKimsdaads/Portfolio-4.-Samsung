@@ -204,6 +204,6 @@ var scene = new ScrollMagic.Scene({
 .setPin('#slider2')
 .setTween(animation2)
 .addTo(controller)
-.addIndicators();
+// .addIndicators();
 
 }
