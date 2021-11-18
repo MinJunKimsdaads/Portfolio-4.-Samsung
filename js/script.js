@@ -146,42 +146,47 @@ window.onload = function(){
         video.style.animationFillMode = 'forwards';
     });
 
-    // const container2 = document.getElementById('container2');
-
-    // slide2(container2);
-
-    // function slide2(e) {
-    //     let elementWidth = e.offsetWidth;
-    //     let parentWidth = e.parentElement.offsetWidth;
-    //     let i = 0;
-    //     let k = '500px';
-  
-    // setInterval(() => {
-    //     var dis = --i;
-    //     e.style.transform = "rotateZ(15deg) translateX(k)";
+    const container1 = document.getElementById('container1');
+    const container2 = document.getElementById('container2');
+    const slider2 = document.getElementById('slider2');
+    const test1 = document.getElementById('test1');
+    const test2 = document.getElementById('test2');
+    slide2(container1);
+    
+    function slide2(e) {
+        let elementWidth = e.offsetWidth;
+        let parentWidth = e.parentElement.offsetWidth;
+        let flag1 = 0;
         
-    //     if (elementWidth == -i) {
-    //         i = parentWidth;
-    //     }
-    // }, 10);
-    // }
-
-    // const container2 = document.getElementById('container2');
-
-    // slide2(container2);
-
-    // function slide2(e) {
-    //     let elementWidth = e.offsetWidth;
-    //     let parentWidth = e.parentElement.offsetWidth;
-    //     let flag = 0;
   
-    // setInterval(() => {
-    //     e.style.marginLeft = --flag + "px";
-  
-    //     if (elementWidth == -flag) {
-    //         flag = parentWidth;
-    //     }
-    // }, 10);
-    // }
+    var ttt = setInterval(() => {
+        var aa = --flag1;
+        e.style.marginLeft = aa + "px";
+        var cc=container1.cloneNode(true);
+        test1.append(cc);
+        if (e.style.marginLeft  == -parentWidth) {
+            container1.remove;
+        }
+        
+    }, 10);
+}
 
+slide1(container2);
+function slide1(e) {
+    let elementWidth = e.offsetWidth;
+    let parentWidth = e.parentElement.offsetWidth;
+    let flag1 = 0;
+
+var ttt1 = setInterval(() => {
+    var aa = --flag1;
+    e.style.marginLeft = aa + "px";
+    var dd=container2.cloneNode(true);
+    test2.append(dd);
+    container2.remove;
+    if (e.style.marginLeft  == -parentWidth) {
+        container2.remove;
+    }
+}, 10);
+
+}
 }
