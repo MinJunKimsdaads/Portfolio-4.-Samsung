@@ -187,6 +187,23 @@ var ttt1 = setInterval(() => {
         container2.remove;
     }
 }, 10);
-
 }
+
+var mm = document.querySelector('slider2')
+
+var controller = new ScrollMagic.Controller();
+var animation2 = new TweenMax.from('#cutton',1, {
+    height:"100%"
+})
+var scene = new ScrollMagic.Scene({
+    duration: 3500,
+    triggerElement: '#slider2',
+    triggerHook: 0
+})
+// .addIndicators()
+.setPin('#slider2')
+.setTween(animation2)
+.addTo(controller)
+.addIndicators();
+
 }
