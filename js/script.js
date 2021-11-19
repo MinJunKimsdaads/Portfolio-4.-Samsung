@@ -146,64 +146,40 @@ window.onload = function(){
         video.style.animationFillMode = 'forwards';
     });
 
-    const container1 = document.getElementById('container1');
-    const container2 = document.getElementById('container2');
     const slider2 = document.getElementById('slider2');
     const test1 = document.getElementById('test1');
-    const test2 = document.getElementById('test2');
-    slide2(container1);
-    
-    function slide2(e) {
-        let elementWidth = e.offsetWidth;
-        let parentWidth = e.parentElement.offsetWidth;
-        let flag1 = 0;
+    const container1 = document.getElementById('container1')
+
+    slider2.addEventListener('mouseover', function(){
+        container1.style.animationName='slide1';
+        container1.addEventListener('animationstart',function(){
+            var clone = container1.cloneNode(true);
+            test1.append(clone);
+        })
+        container1.addEventListener('animationend', function(){
+            container1.remove();
+        })
         
-  
-    var ttt = setInterval(() => {
-        var aa = --flag1;
-        e.style.marginLeft = aa + "px";
-        var cc=container1.cloneNode(true);
-        test1.append(cc);
-        if (e.style.marginLeft  == -parentWidth) {
-            container1.remove;
-        }
-        
-    }, 10);
-}
+    })
 
-slide1(container2);
-function slide1(e) {
-    let elementWidth = e.offsetWidth;
-    let parentWidth = e.parentElement.offsetWidth;
-    let flag1 = 0;
+    var controller = new ScrollMagic.Controller();
+    var animation = new TimelineMax();
+                 animation
+                 .to('#cuttontilte',2,{opacity:'0'})
+                 .to('#cutton',1,{height:'0'})
+                //  .to('.item',1,{x:'-200%'})
+                 
+                 
+                 
 
-var ttt1 = setInterval(() => {
-    var aa = --flag1;
-    e.style.marginLeft = aa + "px";
-    var dd=container2.cloneNode(true);
-    test2.append(dd);
-    container2.remove;
-    if (e.style.marginLeft  == -parentWidth) {
-        container2.remove;
-    }
-}, 10);
-}
-
-var mm = document.querySelector('slider2')
-
-var controller = new ScrollMagic.Controller();
-var animation2 = new TweenMax.from('#cutton',1, {
-    height:"100%"
-})
-var scene = new ScrollMagic.Scene({
-    duration: 3500,
-    triggerElement: '#slider2',
-    triggerHook: 0
-})
-// .addIndicators()
-.setPin('#slider2')
-.setTween(animation2)
-.addTo(controller)
+    var scene3 = new ScrollMagic.Scene({
+                 triggerElement: '#slider2',
+                 triggerHook: 0,
+                 duration: '1200'
+    })
+    .setPin('#slider2')
+    .setTween(animation)
+    .addTo(controller)
 // .addIndicators();
 
 }
