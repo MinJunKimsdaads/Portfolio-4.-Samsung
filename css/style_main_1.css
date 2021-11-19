@@ -1,6 +1,7 @@
+
 header {
   background-color: white;
-  width: 100vw;
+  width: 100%;
   height: 6vh;
   margin-top: 0;
   margin-left: 0;
@@ -288,8 +289,8 @@ header {
 
 @keyframes animation1_after {
   to {
-    width: 55vw;
-    height: 55vw;
+    width: 60vw;
+    height: 60vw;
     border-radius: 50%;
   }
 }
@@ -403,11 +404,14 @@ header {
 #slider2 {
   width: 100vw;
   height: 85vh;
-  background-color: #f5f5f7;
+  background-color: white;
   margin-top: 0.75%;
   position: relative;
   display: flex;
   align-items: center;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #slider2 #cutton {
@@ -430,7 +434,7 @@ header {
 #slider2 #test1 {
   width: 100%;
   height: 80%;
-  background-color: pink;
+  /* background-color: black; */
   overflow: hidden;
   white-space: nowrap;
 }
@@ -438,8 +442,18 @@ header {
 #slider2 #test1 #description4 {
   width: 100%;
   height: 20%;
-  background-color: blue;
+  /* background-color: blue; */
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider2 #test1 #description4 h2 {
+  color: white;
+  font-size: 3vw;
+  font-family: 'Noto Sans Display', sans-serif;
+  font-family: 'Samsung Sharp Sans Regular';
 }
 
 #slider2 #test1 #container1 {
@@ -450,7 +464,7 @@ header {
   position: relative;
   top: 10%;
   /* animation-name: slide1; */
-  animation-duration: 10s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -468,35 +482,66 @@ header {
 #slider2 #container1 .item {
   width: 15%;
   height: 100%;
+  background-color: #E8EBF3;
   position: absolute;
+  border-radius: 5%;
+}
+
+#slider2 #container1 .item .pic2 {
+  width: 30%;
+  height: 30%;
+  /* background-color: gray; */
+  margin: 10% auto;
+  /* border-radius: 10%; */
+}
+
+#slider2 #container1 .item .pic2 img {
+ width: 100%;
+ height: 100%;
+}
+
+#slider2 #container1 .item h3 {
+  width: 100%;
+  height: 10%;
+  /* background-color: skyblue; */
+  margin: 0 auto;
+  text-align: center;
+  /* border-top: #575556 solid 1px ; */
+}
+
+#slider2 #container1 .item p {
+  width: 100%;
+  height: 20%;
+  /* background-color: skyblue; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+#slider2 #container1 .item p:last-child:hover {
+  cursor: pointer;
 }
 
 #slider2 #container1 .item1 {
-  background-color: red;
   top: 0;
   left: 2.5%;
 }
 
 #slider2 #container1 .item2 {
-  background-color: blue;
   top: 0;
   left: 22.5%;
 }
 
 #slider2 #container1 .item3 {
-  background-color: purple;
   top: 0;
   left: 42.5%;
 }
 
 #slider2 #container1 .item4 {
-  background-color: dodgerblue;
   top: 0;
   left: 62.5%;
 }
 
 #slider2 #container1 .item5 {
-  background-color: darkred;
   top: 0;
   left: 82.5%;
 }
@@ -512,5 +557,5 @@ footer {
   width: 1440px;
   height: 100%;
   margin: 0 auto;
-  background-color: pink;
+  /* background-color: pink; */
 }

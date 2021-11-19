@@ -1,4 +1,5 @@
 window.onload = function(){
+
     const slider1 = document.getElementById('slider1');
     const image1 = document.getElementById('image1');
     const pic1 = document.getElementById('pic1');
@@ -149,6 +150,8 @@ window.onload = function(){
     const slider2 = document.getElementById('slider2');
     const test1 = document.getElementById('test1');
     const container1 = document.getElementById('container1')
+    const item2 = container1.getElementsByClassName('item');
+    console.log(item2);
 
     slider2.addEventListener('mouseover', function(){
         container1.style.animationName='slide1';
@@ -165,17 +168,15 @@ window.onload = function(){
     var controller = new ScrollMagic.Controller();
     var animation = new TimelineMax();
                  animation
-                 .to('#cuttontilte',2,{opacity:'0'})
+                 .to('#cuttontilte',1,{opacity:'0'})
                  .to('#cutton',1,{height:'0'})
                 //  .to('.item',1,{x:'-200%'})
-                 
-                 
-                 
+                              
 
     var scene3 = new ScrollMagic.Scene({
                  triggerElement: '#slider2',
                  triggerHook: 0,
-                 duration: '1200'
+                 duration: '800'
     })
     .setPin('#slider2')
     .setTween(animation)
