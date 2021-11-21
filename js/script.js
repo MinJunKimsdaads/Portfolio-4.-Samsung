@@ -1,5 +1,12 @@
 window.onload = function(){
 
+    const wrap=document.getElementById('wrap');
+    const loading=document.getElementsByClassName('loadingio-spinner-spinner-3b1t6err0ft').item(0);
+    setTimeout(function(){
+        loading.style.display='none'
+        wrap.style.display='block';
+    },5000);
+
     const slider1 = document.getElementById('slider1');
     const image1 = document.getElementById('image1');
     const pic1 = document.getElementById('pic1');
