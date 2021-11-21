@@ -5,7 +5,7 @@ window.onload = function(){
     setTimeout(function(){
         loading.style.display='none'
         wrap.style.display='block';
-    },5000);
+    },7000);
 
     const slider1 = document.getElementById('slider1');
     const image1 = document.getElementById('image1');
