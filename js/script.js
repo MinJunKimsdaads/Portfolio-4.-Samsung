@@ -7,6 +7,19 @@ window.onload = function(){
         wrap.style.display='block';
     },7000);
 
+    const hamburger=document.getElementById('hamburgerbtn');
+    const hamburgermenu=document.getElementById('hamburgermenu');
+    console.log(hamburgermenu);
+    hamburger.addEventListener('click',function(){
+        if(hamburgermenu.className=='hamburgermenuclass'){
+            hamburgermenu.classList.remove('hamburgermenuclass');
+            hamburgermenu.classList.add('hamburgermenutoggle');
+        }else {
+            hamburgermenu.classList.remove('hamburgermenutoggle');
+            hamburgermenu.classList.add('hamburgermenuclass');
+        }
+    })
+    
     const slider1 = document.getElementById('slider1');
     const image1 = document.getElementById('image1');
     const pic1 = document.getElementById('pic1');
@@ -134,7 +147,7 @@ window.onload = function(){
     const description3 = document.getElementById('description3');
     section1.addEventListener('mouseover', function(){
         
-            description2.style.top = "20%";
+            description2.style.top = "30%";
             description2.style.left = "50%";
             description2.style.color = "white";
             description2.style.fontSize = '4vw';
