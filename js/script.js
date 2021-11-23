@@ -5,7 +5,7 @@ window.onload = function(){
     setTimeout(function(){
         loading.style.display='none'
         wrap.style.display='block';
-    },7000);
+    },2000);
 
     const hamburger=document.getElementById('hamburgerbtn');
     const hamburgermenu=document.getElementById('hamburgermenu');
