@@ -54,17 +54,20 @@ window.onload=function(){
     var controller2 = new ScrollMagic.Controller();
     var animation2 = new TimelineMax();
                     animation2
-                    .to('#imgbox1',1,{top:'80%'})
-                    .to('#cutton2, #imgbox1',5,{top:'10%'})
+                    .to('#imgbox1',2,{top:'60%'})
+                    .to('#cutton2',2,{top:'30%'})
+                    .to('#imgbox1',2,{top:'50%'})
+                    .to('#cutton2',2,{top:'20%'})
                     .to('#cutton2',1,{opacity:'0'})
-                    .to('#textbox1',3,{top:'32.5%'})
-                    .to('#textbox1',3,{top:'-35%'})
-                    .to('#img1',3,{height:'0%'})
-                    .to('#textbox2',3,{top:'32.5%'})
-                    .to('#textbox2',3,{top:'-35%'})
-                    .to('#img2',3,{height:'0%'})
-                    .to('#textbox3',3,{top:'32.5%'})
-                    .to('#textbox3',3,{top:'-35%'})
+                    .to('#imgbox1',5,{top:'10%'})
+                    .to('#textbox1',5,{top:'32.5%'})
+                    .to('#textbox1',5,{top:'-35%'})
+                    .to('#img1',1,{opacity:'0'})
+                    .to('#textbox2',5,{top:'32.5%'})
+                    .to('#textbox2',5,{top:'-35%'})
+                    .to('#img2',1,{opacity:'0'})
+                    .to('#textbox3',5,{top:'32.5%'})
+                    .to('#textbox3',5,{top:'-35%'})
     var scene = new ScrollMagic.Scene({
     duration: 7000,
     triggerElement: slider2,
@@ -74,5 +77,25 @@ window.onload=function(){
     .setTween(animation2)
     .setPin(slider2)
     .addTo(controller2)
+    // .addIndicators();
+
+    var slider4 = document.querySelector('#slider4')
+
+    var controller4 = new ScrollMagic.Controller();
+    var animation4 = new TimelineMax();
+                    animation4
+                    .to('#music, #video, #picture',1,{transform:'translateY(-20%)'})
+                    .to('#cutton3',2,{display:'none'})
+                    .to('#cutton3',0.1,{zIndex:'-10'})
+                    .to('#cutton4',2,{top:'-100%'})
+    var scene = new ScrollMagic.Scene({
+    duration: 4000,
+    triggerElement: slider4,
+    triggerHook: 0
+    })
+    // .addIndicators()
+    .setTween(animation4)
+    .setPin(slider4)
+    .addTo(controller4)
     // .addIndicators();
 }

@@ -134,7 +134,7 @@ header {
   #slider2 {
     width: 100vw;
     height: 100vh;
-    /* background-color: orange; */
+    background-color: #f5f5fa;
   }
 
   #slider2 #cutton2 {
@@ -151,12 +151,12 @@ header {
   }
 
   #slider2 #cutton2 h1 {
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
   }
 
   #slider2 #content1 {
-    width: 1440px;
+    width: 1600px;
     height: 100%;
     /* background-color: pink; */
     position: relative;
@@ -167,7 +167,7 @@ header {
   }
 
   #slider2 #content1 #description1 {
-    width: 25%;
+    width: 27.5%;
     height: 100%;
     /* background-color: red; */
     position: relative;
@@ -177,23 +177,65 @@ header {
   #slider2 #content1 #description1 #textbox1 {
     width: 100%;
     height: 35%;
-    background-color: tomato;
+    /* background-color: pink; */
     position: absolute;
     top: 100%;
     left: 0;
+  }
+
+  #slider2 #content1 #description1 #textbox1 h1 {
+    width: 100%;
+    height: 30%;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: gray; */
+  }
+
+  #slider2 #content1 #description1 #textbox1 p {
+    width: 100%;
+    height: 20%;
+    font-size: 1vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: gray;
+    /* background-color: pink; */
   }
 
   #slider2 #content1 #description1 #textbox3 {
     width: 100%;
     height: 35%;
-    background-color: gray;
+    /* background-color: gray; */
     position: absolute;
     top: 100%;
     left: 0;
   }
 
+  #slider2 #content1 #description1 #textbox3 h1 {
+    width: 100%;
+    height: 30%;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: gray; */
+  }
+
+  #slider2 #content1 #description1 #textbox3 p {
+    width: 100%;
+    height: 20%;
+    font-size: 1vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: gray;
+    /* background-color: pink; */
+  }
+
   #slider2 #content1 #imgbox {
-    width: 50%;
+    width: 45%;
     height: 100%;
     /* background-color: gray; */
     display: flex;
@@ -204,9 +246,10 @@ header {
   #slider2 #content1 #imgbox #imgbox1 {
     width: 65%;
     height: 80%;
-    background-color: black;
+    /* background-color: black; */
     position: relative;
     top: 100%;
+    overflow: hidden;
   }
 
   #slider2 #content1 #imgbox #imgbox1 #img1 {
@@ -215,8 +258,12 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: red;
     z-index: 100;
+  }
+
+  #slider2 #content1 #imgbox #imgbox1 #img1 img {
+    width: 100%;
+    height: 100%;
   }
 
   #slider2 #content1 #imgbox #imgbox1 #img2 {
@@ -225,8 +272,14 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: orange;
     z-index: 90;
+    /* background-color: orange; */
+    
+  }
+
+  #slider2 #content1 #imgbox #imgbox1 #img2 img {
+    width: 100%;
+    height: 100%;
   }
 
   #slider2 #content1 #imgbox #imgbox1 #img3 {
@@ -235,12 +288,16 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: yellow;
-    z-index: 80;
+    /* background-color: yellow; */
+  }
+
+  #slider2 #content1 #imgbox #imgbox1 #img3 img {
+    width: 100%;
+    height: 100%;
   }
 
   #slider2 #content1 #description2 {
-    width: 25%;
+    width: 27.5%;
     height: 100%;
     /* background-color: green; */
     overflow: hidden;
@@ -250,10 +307,31 @@ header {
   #slider2 #content1 #description2 #textbox2 {
     width: 100%;
     height: 35%;
-    background-color: violet;
+    /* background-color: violet; */
     position: absolute;
     top: 100%;
     left: 0;
+  }
+
+  #slider2 #content1 #description2 #textbox2 h1 {
+    width: 100%;
+    height: 30%;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: gray; */
+  }
+
+  #slider2 #content1 #description2 #textbox2 p {
+    width: 100%;
+    height: 20%;
+    font-size: 1vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: gray;
+    /* background-color: pink; */
   }
 
   #slider3 {
@@ -376,8 +454,259 @@ header {
   #slider4 {
     width: 100vw;
     height: 100vh;
-    background-color: green;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
   }
+
+  #slider4 #cutton3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  #slider4 #cutton3 h1 {
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-size: 4vw;
+    /* background-color: pink; */
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #slider4 #cutton3 h1 p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  #slider4 #cutton3 h1 p:first-child {
+    top: 0;
+    left: 0;
+  }
+
+  #slider4 #cutton3 h1 p:nth-child(2) {
+    top: 100%;
+    left: 0;
+  }
+  #slider4 #cutton3 h1 p:nth-child(3) {
+    top: 200%;
+    left: 0;
+  }
+
+  #slider4 #cutton4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 50;
+  }
+
+  #slider4 #cutton4 div:first-child {
+    width: 100%;
+    height: 30%;
+    /* background-color: pink; */
+    /* margin-top: 5%; */
+    
+  }
+
+  #slider4 #cutton4 div:first-child h2 {
+    width: 100%;
+    height: 50%;
+    font-size: 2vw;
+    color: white;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #slider4 #cutton4 div:first-child p {
+    width: 100%;
+    height: 25%;
+    font-size: 1vw;
+    color: white;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #slider4 #cutton4 div:first-child a {
+    width: 100%;
+    height: 25%;
+    font-size: 1vw;
+    color: white;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #slider4 #cutton4 div:first-child a span {
+    width: 15%;
+    height: 60%;
+    border: solid white 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+  }
+
+  #slider4 #cutton4 div:first-child a span:hover {
+    cursor: pointer;
+    background-color: #3b4044;
+    border: none;
+
+  }
+
+  #slider4 #cutton4 div:last-child {
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #slider4 #cutton4 div:last-child #contentbox {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: black;
+  }
+
+  #slider4 #cutton4 div:last-child #contentbox div {
+    width: 30%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0a0a;
+  }
+
+  #slider4 #cutton4 div:last-child #contentbox div .item {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+  }
+
+  #slider4 #content2 {
+    width: 1600px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 30;
+  }
+
+  #slider4 #content2 #description3 {
+    width: 27.5%;
+    height: 100%;
+    background-color: red;
+  }
+
+  #slider4 #content2 #imagebox {
+    width: 45%;
+    height: 100%;
+    background-color: black;
+  }
+
+  #slider4 #content2 #imagebox #picture2 {
+    width: 65%;
+    height: 80%;
+    background-color: black;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #slider4 #content2 #imagebox #picture2 #ani1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* background-color: tomato; */
+    box-shadow: 0px 0px 1px 1px white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: wave;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  #slider4 #content2 #imagebox #picture2 #ani2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* background-color: tomato; */
+    box-shadow: 0px 0px 1px 1px white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: wave;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  }
+
+  #slider4 #content2 #imagebox #picture2 #ani3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* background-color: tomato; */
+    box-shadow: 0px 0px 1px 1px white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: wave;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+  }
+
+  #slider4 #content2 #imagebox #picture2 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  @keyframes wave {
+    to{transform: translate(-50%, -50%) scale(6);}
+  }
+
+  #slider4 #content2 #description4 {
+    width: 27.5%;
+    height: 100%;
+    background-color: blue;
+  }
+
+
 
   footer {
     width: 100vw;
@@ -389,7 +718,7 @@ header {
     width: 1440px;
     height: 100%;
     margin: 0 auto;
-    background-color: white;
+    /* background-color: rgb(8, 6, 6); */
     display: flex;
     align-items: center;
   }
