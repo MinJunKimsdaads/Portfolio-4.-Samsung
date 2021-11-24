@@ -89,7 +89,7 @@ window.onload=function(){
                     .to('#cutton3',0.1,{zIndex:'-10'})
                     .to('#cutton4',2,{top:'-100%'})
     var scene = new ScrollMagic.Scene({
-    duration: 4000,
+    duration: 6000,
     triggerElement: slider4,
     triggerHook: 0
     })
