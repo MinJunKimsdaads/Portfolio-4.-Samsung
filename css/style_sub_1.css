@@ -656,6 +656,7 @@ header {
     animation-name: wave;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
   }
 
   #slider4 #content2 #imagebox #picture2 #ani2 {
@@ -687,7 +688,7 @@ header {
     animation-name: wave;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-delay: 4s;
+    animation-delay: 3s;
   }
 
   #slider4 #content2 #imagebox #picture2 img {
