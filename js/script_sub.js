@@ -84,7 +84,7 @@ window.onload=function(){
     var controller4 = new ScrollMagic.Controller();
     var animation4 = new TimelineMax();
                     animation4
-                    .to('#music, #video, #picture',3,{transform:'translateY(-100%)'})
+                    .to('#music, #video, #picture',1,{transform:'translateY(-100%)'})
                     .to('#cutton3',2,{display:'none'})
                     .to('#cutton3',0.1,{zIndex:'-10'})
                     .to('#cutton4',2,{top:'-100%'})
