@@ -352,6 +352,7 @@ header {
   #slider3 #mainbox #colorbox {
     width: 43%;
     height: 100%;
+    /* background-color: red; */
     background-color: #f8f9fa;
   }
 
@@ -360,7 +361,7 @@ header {
     height: 15%;
     position: relative;
     top: 42.5%;
-    left: 5%;
+    left: 35%;
     /* background-color: blanchedalmond; */
   }
 
@@ -469,6 +470,14 @@ header {
     top: 10%;
     left: 17.5%;
     background-color: gray;
+    overflow: hidden;
+  }
+
+  #slider3 #mainbox #imgbox5 #picture3 img {
+    width: 100%;
+    height: 100%;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
   }
 
   #slider3 #subbox {
@@ -484,7 +493,35 @@ header {
     position: relative;
     top: 17.5%;
     left: 15%;
+    overflow: hidden;
   }
+
+  #slider3 #subbox #imgbox6 img{
+    width: 100%;
+    height: 100%;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes disappear {
+    to {
+      opacity: 0;
+      transform: translateX(-50%)
+    }
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   #slider3 #subbox #buttonbox2 {
     width: 70%;
     height: 15%;
@@ -606,7 +643,7 @@ header {
     position: relative;
     top: 0;
     animation-name: aaa;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     /* background-color: yellow; */
@@ -782,9 +819,9 @@ header {
     position:relative;
     margin: 50px;
     width:50%;
-    height:100px;
+    height:50px;
     background:#0c4da2;
-    border-radius: 10px;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -941,9 +978,9 @@ header {
     position:relative;
     margin: 50px;
     width:50%;
-    height:100px;
+    height:50px;
     background:#0c4da2;
-    border-radius: 10px;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;

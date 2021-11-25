@@ -83,28 +83,66 @@ window.onload=function(){
     const green=document.getElementById('green');
     const bronze=document.getElementById('bronze');
     let color=document.getElementById('color');
+    var arr=['gray','green','bronze'];
     gray.addEventListener('click',function(){
         color.innerHTML='미스틱 그레이'
+        img4.setAttribute('src','./image/sub/slider3/'+arr[0]+'/'+1+'.png');
+        img5.setAttribute('src','./image/sub/slider3/'+arr[0]+'/'+2+'.png');
+        color.className='gray';
+        return color.className;
+        
+        
     })
     green.addEventListener('click',function(){
         color.innerHTML='미스틱 그린'
+        img4.setAttribute('src','./image/sub/slider3/'+arr[1]+'/'+1+'.png');
+        img5.setAttribute('src','./image/sub/slider3/'+arr[1]+'/'+2+'.png');
+        color.className='green';
+        return color.className;
+        
+        
     })
     bronze.addEventListener('click',function(){
         color.innerHTML='미스틱 브론즈'
+        img4.setAttribute('src','./image/sub/slider3/'+arr[2]+'/'+1+'.png');
+        img5.setAttribute('src','./image/sub/slider3/'+arr[2]+'/'+2+'.png');
+        color.className='bronze';
+        return color.className;
     })
+
+    console.log(color.className);
+
 
     let firstnumber=document.getElementById('firstnumber');
     let number = firstnumber.innerText;
     const right=document.getElementById('right');
     const left=document.getElementById('left');
+    let img4=document.getElementById('img4');
+    let img5=document.getElementById('img5');
+    let picture3=document.getElementById('picture3');
+    let imgbox6=document.getElementById('imgbox6');
 
     right.addEventListener('click',function(){
         if(number<3){
             number++;
+
         } else if(number>=3){
             number=1;
         }
+        img4.style.animationName='disappear';
+        img5.style.animationName='disappear';
         firstnumber.innerText=number;
+        setTimeout(function(){
+            var subnumber=number+1;
+            if (subnumber>=4){
+                subnumber=1;
+            }
+            console.log(color.className);
+            img4.style.animationName='appear';
+            img5.style.animationName='appear';
+            img4.setAttribute('src','./image/sub/slider3/'+color.className+'/'+number+'.png');
+            img5.setAttribute('src','./image/sub/slider3/'+color.className+'/'+subnumber+'.png');
+        },700)
     })
 
     left.addEventListener('click',function(){
@@ -113,7 +151,20 @@ window.onload=function(){
         } else if(number<=1){
             number=3;
         }
+        img4.style.animationName='disappear';
+        img5.style.animationName='disappear';
         firstnumber.innerText=number;
+        setTimeout(function(){
+            var subnumber=number+1;
+            if (subnumber>=4){
+                subnumber=1;
+            }
+            img4.style.animationName='appear';
+            img5.style.animationName='appear';
+            img4.setAttribute('src','./image/sub/slider3/gray/'+number+'.png');
+            img5.setAttribute('src','./image/sub/slider3/gray/'+subnumber+'.png');
+            console.log(img5.getAttribute);
+        },700)
     })
 
     
