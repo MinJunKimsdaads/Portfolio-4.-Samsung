@@ -135,9 +135,9 @@ window.onload=function(){
                     .from('#subtitle,#contentbox',2,{marginTop:'30%',opacity:'0'})
                     .to('#subtitle',5,{marginTop:'0',opacity:'1'})
                     .to('#contentbox',5,{marginTop:'0',opacity:'1'})
-                    .to('#cutton4',2,{top:'-100%'})
+                    .to('#cutton4',20,{top:'-100%'})
                     .from('.balloon1,.balloon2',1,{opacity:'0',transform:'scale(0)'})
-                    .to('.balloon1,.balloon2',5,{opacity:'1',transform:'scale(1)'})
+                    .to('.balloon1,.balloon2',20,{opacity:'1',transform:'scale(1)'})
                     
     var scene = new ScrollMagic.Scene({
     duration: 3500,
