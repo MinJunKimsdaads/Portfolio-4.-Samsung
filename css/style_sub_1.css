@@ -121,6 +121,7 @@ header {
   #slider1 #cutton1 h1 {
     color: white;
     font-size: 5vw;
+    z-index: 100;
   }
 
 
@@ -344,14 +345,14 @@ header {
   #slider3 #mainbox {
     width: 70%;
     height: 100%;
-    background-color: gray;
+    background-color: #f8f9fa;
     display: flex;
   }
 
   #slider3 #mainbox #colorbox {
     width: 43%;
     height: 100%;
-    background-color: blueviolet;
+    background-color: #f8f9fa;
   }
 
   #slider3 #mainbox #colorbox #buttonbox1 {
@@ -360,7 +361,7 @@ header {
     position: relative;
     top: 42.5%;
     left: 5%;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
   }
 
   #slider3 #mainbox #colorbox #buttonbox1 h1 {
@@ -370,7 +371,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: pink;
+    background-color: #f8f9fa;
   }
 
   #slider3 #mainbox #colorbox #buttonbox1 #btn1 {
@@ -379,7 +380,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: yellow;
+    background-color: #f8f9fa;
   }
 
   #slider3 #mainbox #colorbox #buttonbox1 #btn1 div {
@@ -392,9 +393,6 @@ header {
     /* background-color: white; */
   }
 
-  /* #slider3 #mainbox #colorbox #buttonbox1 #btn1 div:active {
-    border: solid 1px gray;
-  } */
 
   #slider3 #mainbox #colorbox #buttonbox1 #btn1 #gray button {
     width: 20px;
@@ -402,6 +400,10 @@ header {
     border-radius: 50%;
     border: none;
     background-color: #535959;
+  }
+
+  #slider3 #mainbox #colorbox #buttonbox1 #btn1 #gray button:hover {
+    cursor: pointer;
   }
 
   #slider3 #mainbox #colorbox #buttonbox1 #btn1 #green button {
@@ -412,6 +414,10 @@ header {
     background-color: #b1c0bd;
   }
 
+  #slider3 #mainbox #colorbox #buttonbox1 #btn1 #green button:hover {
+    cursor: pointer;
+  }
+
   #slider3 #mainbox #colorbox #buttonbox1 #btn1 #bronze button {
     width: 20px;
     height: 20px;
@@ -420,24 +426,61 @@ header {
     background-color: #9c706f;
   }
 
-
+  #slider3 #mainbox #colorbox #buttonbox1 #btn1 #bronze button:hover {
+    cursor: pointer;
+  }
 
   #slider3 #mainbox #colorbox #buttonbox1 #purchase {
     width: 100%;
     height: 40%;
-    background-color: darkred;
+    /* background-color: darkred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #slider3 #mainbox #colorbox #buttonbox1 #purchase a {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: solid black 1px;
+  }
+
+  #slider3 #mainbox #colorbox #buttonbox1 #purchase a:hover {
+    border: none;
+    cursor: pointer;
+    background-color: #0c4da2;
+    color: white;
+  }
+
+  #slider3 #mainbox #imgbox5 {
+    width: 57%;
+    height: 100%;
+    /* background-color: pink; */
+  }
+
+  #slider3 #mainbox #imgbox5 #picture3 {
+    width: 65%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    left: 17.5%;
+    background-color: gray;
   }
 
   #slider3 #subbox {
     width: 30%;
     height: 100%;
-    background-color: black;
+    background-color: white;
   }
 
   #slider3 #subbox #imgbox6 {
     width: 70%;
     height: 50%;
-    background-color: gray;
+    background-color: #f8f9fa;
     position: relative;
     top: 17.5%;
     left: 15%;
@@ -448,7 +491,79 @@ header {
     position: relative;
     top: 17.5%;
     left: 15%;
-    background-color: indianred;
+    /* background-color: indianred; */
+    display: flex;
+  }
+
+  #slider3 #subbox #buttonbox2 #arrow {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: gray; */
+  }
+
+  #slider3 #subbox #buttonbox2 #arrow #left {
+    width: 50px;
+    height: 50px;
+    font-size: 2vw;
+    border-radius: 50%;
+    border: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  #slider3 #subbox #buttonbox2 #arrow #left:hover {
+    cursor: pointer;
+    border: gray solid 3px;
+  }
+
+  #slider3 #subbox #buttonbox2 #arrow #right {
+    width: 50px;
+    height: 50px;
+    font-size: 2vw;
+    border-radius: 50%;
+    border: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  #slider3 #subbox #buttonbox2 #arrow #right:hover {
+    cursor: pointer;
+    border: gray solid 3px;
+  }
+
+  #slider3 #subbox #buttonbox2 #numbering {
+    width: 50%;
+    height: 100%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  #slider3 #subbox #buttonbox2 #numbering #number {
+    width: 50%;
+    height: 35%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2vw;
+  }
+
+  #slider3 #subbox #buttonbox2 #numbering #number span {
+    width: 33.33%;
+    height: 100%;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #slider4 {
@@ -457,6 +572,7 @@ header {
     background-color: black;
     position: relative;
     overflow: hidden;
+    top:20%;
   }
 
   #slider4 #cutton3 {
@@ -484,22 +600,53 @@ header {
     position: relative;
   }
 
-  #slider4 #cutton3 h1 p {
+  #slider4 #cutton3 h1 #titlecontainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    animation-name: aaa;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* background-color: yellow; */
+  }
+
+  @keyframes aaa {
+    25% {
+      top: -100%;
+    }
+    50% {
+      top: -200%;
+    }
+
+    75% {
+      top: -100%;
+    }
+
+    100% {
+      top: 0%;
+    }
+  }
+
+
+
+  #slider4 #cutton3 h1 #titlecontainer p {
     width: 100%;
     height: 100%;
     position: absolute;
   }
 
-  #slider4 #cutton3 h1 p:first-child {
+  #slider4 #cutton3 h1 #titlecontainer p:first-child {
     top: 0;
     left: 0;
   }
 
-  #slider4 #cutton3 h1 p:nth-child(2) {
+  #slider4 #cutton3 h1 #titlecontainer p:nth-child(2) {
     top: 100%;
     left: 0;
   }
-  #slider4 #cutton3 h1 p:nth-child(3) {
+  #slider4 #cutton3 h1 #titlecontainer p:nth-child(3) {
     top: 200%;
     left: 0;
   }
@@ -519,7 +666,7 @@ header {
     height: 30%;
     /* background-color: pink; */
     /* margin-top: 5%; */
-    
+    overflow: hidden;
   }
 
   #slider4 #cutton4 div:first-child h2 {
@@ -569,17 +716,16 @@ header {
     cursor: pointer;
     background-color: #3b4044;
     border: none;
-
   }
 
   #slider4 #cutton4 div:last-child {
     width: 100%;
     height: 70%;
     background-color: black;
-    opacity: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
 
   #slider4 #cutton4 div:last-child #contentbox {
@@ -604,7 +750,12 @@ header {
   #slider4 #cutton4 div:last-child #contentbox div .item {
     width: 100px;
     height: 100px;
-    background-color: pink;
+    /* background-color: pink; */
+  }
+
+  #slider4 #cutton4 div:last-child #contentbox div .item img {
+    width: 100%;
+    height: 100%;
   }
 
   #slider4 #content2 {
@@ -624,8 +775,47 @@ header {
   #slider4 #content2 #description3 {
     width: 27.5%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
   }
+
+  #slider4 #content2 #description3 .balloon1 {
+    position:relative;
+    margin: 50px;
+    width:50%;
+    height:100px;
+    background:#0c4da2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   }
+   #slider4 #content2 #description3 .balloon1:after {
+    border-top:0px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #0c4da2;
+    content:"";
+    position:absolute;
+    top:-10px;
+    left:50%;
+   }
+
+   #slider4 #content2 #description3 .balloon11 {
+    top: 10%;
+    left: 10%;
+   }
+
+   #slider4 #content2 #description3 .balloon12 {
+    top: 25%;
+    left: 20%;
+   }
+
+   #slider4 #content2 #description3 .balloon13 {
+    top: 40%;
+    left: 10%;
+   }
+   
 
   #slider4 #content2 #imagebox {
     width: 45%;
@@ -647,6 +837,18 @@ header {
     width: 100%;
     height: 100%;
     position: absolute;
+  }
+
+  #slider4 #content2 #imagebox #picture2 #bixby {
+    width: 150%;
+    font-size: 2vw;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 30;
   }
 
   .boxContainer{
@@ -732,8 +934,46 @@ header {
   #slider4 #content2 #description4 {
     width: 27.5%;
     height: 100%;
-    background-color: blue;
+    /* background-color: blue; */
   }
+
+  #slider4 #content2 #description4 .balloon2 {
+    position:relative;
+    margin: 50px;
+    width:50%;
+    height:100px;
+    background:#0c4da2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   }
+   #slider4 #content2 #description4 .balloon2:after {
+    border-top:0px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #0c4da2;
+    content:"";
+    position:absolute;
+    top:-10px;
+    left:50%;
+   }
+
+   #slider4 #content2 #description4 .balloon21 {
+    top: 13%;
+    left: 12%;
+   }
+
+   #slider4 #content2 #description4 .balloon22 {
+    top: 23%;
+    left: 18%;
+   }
+
+   #slider4 #content2 #description4 .balloon23 {
+    top: 43%;
+    left: 12%;
+   }
 
 
 

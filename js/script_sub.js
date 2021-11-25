@@ -4,7 +4,7 @@ window.onload=function(){
     setTimeout(function(){
         loading.style.display='none'
         wrap.style.display='block';
-    },500);
+    },1000);
 
     const hamburger=document.getElementById('hamburgerbtn');
     const hamburgermenu=document.getElementById('hamburgermenu');
@@ -79,17 +79,68 @@ window.onload=function(){
     .addTo(controller2)
     // .addIndicators();
 
+    const gray=document.getElementById('gray');
+    const green=document.getElementById('green');
+    const bronze=document.getElementById('bronze');
+    let color=document.getElementById('color');
+    gray.addEventListener('click',function(){
+        color.innerHTML='미스틱 그레이'
+    })
+    green.addEventListener('click',function(){
+        color.innerHTML='미스틱 그린'
+    })
+    bronze.addEventListener('click',function(){
+        color.innerHTML='미스틱 브론즈'
+    })
+
+    let firstnumber=document.getElementById('firstnumber');
+    let number = firstnumber.innerText;
+    const right=document.getElementById('right');
+    const left=document.getElementById('left');
+
+    right.addEventListener('click',function(){
+        if(number<3){
+            number++;
+        } else if(number>=3){
+            number=1;
+        }
+        firstnumber.innerText=number;
+    })
+
+    left.addEventListener('click',function(){
+        if(number>1){
+            number--;
+        } else if(number<=1){
+            number=3;
+        }
+        firstnumber.innerText=number;
+    })
+
+    
+
+
+
+
+    
+
     var slider4 = document.querySelector('#slider4')
+    var cutton3 = document.querySelector('#cutton3')
+    var cutton4 = document.querySelector('#cutton4')
 
     var controller4 = new ScrollMagic.Controller();
     var animation4 = new TimelineMax();
                     animation4
-                    .to('#music, #video, #picture',3,{transform:'translateY(-100%)'})
-                    .to('#cutton3',2,{display:'none'})
+                    .to('#cutton3',2,{opacity:'0'})
                     .to('#cutton3',0.1,{zIndex:'-10'})
+                    .from('#subtitle,#contentbox',2,{marginTop:'30%',opacity:'0'})
+                    .to('#subtitle',5,{marginTop:'0',opacity:'1'})
+                    .to('#contentbox',5,{marginTop:'0',opacity:'1'})
                     .to('#cutton4',2,{top:'-100%'})
+                    .from('.balloon1,.balloon2',1,{opacity:'0',transform:'scale(0)'})
+                    .to('.balloon1,.balloon2',5,{opacity:'1',transform:'scale(1)'})
+                    
     var scene = new ScrollMagic.Scene({
-    duration: 6000,
+    duration: 3500,
     triggerElement: slider4,
     triggerHook: 0
     })
@@ -99,3 +150,8 @@ window.onload=function(){
     .addTo(controller4)
     // .addIndicators();
 }
+
+
+
+
+
