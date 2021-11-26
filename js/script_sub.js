@@ -49,6 +49,7 @@ window.onload=function(){
     video.currentTime = scrollpos;
     }, 0.5);
 
+
     var slider2 = document.querySelector('#slider2')
 
     var controller2 = new ScrollMagic.Controller();
@@ -166,13 +167,6 @@ window.onload=function(){
             console.log(img5.getAttribute);
         },700)
     })
-
-    
-
-
-
-
-    
 
     var slider4 = document.querySelector('#slider4')
     var cutton3 = document.querySelector('#cutton3')
