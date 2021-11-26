@@ -27,7 +27,7 @@ window.onload=function(){
         opacity:"1"
     })
     var scene = new ScrollMagic.Scene({
-    duration: 2000,
+    duration: 4000,
     triggerElement: slider1,
     triggerHook: 0
     })
@@ -42,11 +42,12 @@ window.onload=function(){
     var delay = 0;
 
     scene.on("update", e => {
-    scrollpos = e.scrollPos/12000
+    scrollpos = e.scrollPos/1000;
+    })
 
     setInterval(() => {
     video.currentTime = scrollpos;
-    }, 0.01);
+    }, 0.5);
 
     var slider2 = document.querySelector('#slider2')
 
@@ -160,8 +161,8 @@ window.onload=function(){
             }
             img4.style.animationName='appear';
             img5.style.animationName='appear';
-            img4.setAttribute('src','./image/sub/slider3/gray/'+number+'.png');
-            img5.setAttribute('src','./image/sub/slider3/gray/'+subnumber+'.png');
+            img4.setAttribute('src','./image/sub/slider3/'+color.className+'/'+number+'.png');
+            img5.setAttribute('src','./image/sub/slider3/'+color.className+'/'+subnumber+'.png');
             console.log(img5.getAttribute);
         },700)
     })
