@@ -168,6 +168,7 @@ window.onload=function(){
         },700)
     })
 
+
     var slider4 = document.querySelector('#slider4')
     var cutton3 = document.querySelector('#cutton3')
     var cutton4 = document.querySelector('#cutton4')
