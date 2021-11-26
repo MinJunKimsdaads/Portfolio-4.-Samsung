@@ -27,7 +27,7 @@ window.onload=function(){
         opacity:"1"
     })
     var scene = new ScrollMagic.Scene({
-    duration: 6200,
+    duration: 2000,
     triggerElement: slider1,
     triggerHook: 0
     })
@@ -42,12 +42,11 @@ window.onload=function(){
     var delay = 0;
 
     scene.on("update", e => {
-    scrollpos = e.scrollPos/1000;
-    })
+    scrollpos = e.scrollPos/12000
 
     setInterval(() => {
     video.currentTime = scrollpos;
-    }, 5);
+    }, 0.01);
 
     var slider2 = document.querySelector('#slider2')
 
