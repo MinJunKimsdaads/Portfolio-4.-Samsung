@@ -90,6 +90,7 @@ window.onload=function(){
         img4.setAttribute('src','./image/sub/slider3/'+arr[0]+'/'+1+'.png');
         img5.setAttribute('src','./image/sub/slider3/'+arr[0]+'/'+2+'.png');
         color.className='gray';
+        firstnumber.innerText=1;
         return color.className;
         
         
@@ -99,6 +100,7 @@ window.onload=function(){
         img4.setAttribute('src','./image/sub/slider3/'+arr[1]+'/'+1+'.png');
         img5.setAttribute('src','./image/sub/slider3/'+arr[1]+'/'+2+'.png');
         color.className='green';
+        firstnumber.innerText=1;
         return color.className;
         
         
@@ -108,6 +110,7 @@ window.onload=function(){
         img4.setAttribute('src','./image/sub/slider3/'+arr[2]+'/'+1+'.png');
         img5.setAttribute('src','./image/sub/slider3/'+arr[2]+'/'+2+'.png');
         color.className='bronze';
+        firstnumber.innerText=1;
         return color.className;
     })
 
@@ -143,6 +146,8 @@ window.onload=function(){
             img5.style.animationName='appear';
             img4.setAttribute('src','./image/sub/slider3/'+color.className+'/'+number+'.png');
             img5.setAttribute('src','./image/sub/slider3/'+color.className+'/'+subnumber+'.png');
+            return number;
+            return subnumber;
         },700)
     })
 
@@ -164,7 +169,8 @@ window.onload=function(){
             img5.style.animationName='appear';
             img4.setAttribute('src','./image/sub/slider3/'+color.className+'/'+number+'.png');
             img5.setAttribute('src','./image/sub/slider3/'+color.className+'/'+subnumber+'.png');
-            console.log(img5.getAttribute);
+            return number;
+            return subnumber;
         },700)
     })
 
