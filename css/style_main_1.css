@@ -93,8 +93,8 @@
   }
   
   #header_icon1 img, #header_icon2 img, #header_icon3 img {
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
   }
 
   #header_icon3 {
@@ -112,11 +112,6 @@
     cursor: pointer;
   }
   
-  #header_icon1 img, #header_icon2 img, #header_icon3 img {
-    width: 40%;
-    height: 40%;
-  }
-
   #hamburgermenu {
     width: 100vw;
     height: 30vh;
@@ -778,11 +773,6 @@
     cursor: pointer;
   }
   
-  #header_icon1 img, #header_icon2 img, #header_icon3 img {
-    width: 10%;
-    height: 10%;
-  }
-
   #header_icon3 {
     width: 5%;
     height: 100%;
@@ -799,8 +789,8 @@
   }
   
   #header_icon1 img, #header_icon2 img, #header_icon3 img {
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 60%;
   }
 
   #hamburgermenu {

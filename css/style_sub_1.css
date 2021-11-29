@@ -311,9 +311,9 @@
 
   #slider2 #content1 #imgbox #imgbox1 #img1 {
     width: 100%;
-    height: 40%;
+    height: 30%;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 0;
     z-index: 100;
   }
@@ -325,9 +325,9 @@
 
   #slider2 #content1 #imgbox #imgbox1 #img2 {
     width: 100%;
-    height: 40%;
+    height: 30%;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 0;
     z-index: 90;
     /* background-color: orange; */
@@ -341,9 +341,9 @@
 
   #slider2 #content1 #imgbox #imgbox1 #img3 {
     width: 100%;
-    height: 40%;
+    height: 30%;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 0;
     /* background-color: yellow; */
   }
@@ -407,7 +407,7 @@
   }
 
   #slider3 #mainbox #colorbox {
-    width: 43%;
+    width: 40%;
     height: 100%;
     /* background-color: red; */
     background-color: #f8f9fa;
@@ -453,8 +453,8 @@
 
 
   #slider3 #mainbox #colorbox #buttonbox1 #btn1 #gray button {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     border: none;
     background-color: #535959;
@@ -465,8 +465,8 @@
   }
 
   #slider3 #mainbox #colorbox #buttonbox1 #btn1 #green button {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     border: none;
     background-color: #b1c0bd;
@@ -477,8 +477,8 @@
   }
 
   #slider3 #mainbox #colorbox #buttonbox1 #btn1 #bronze button {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     border: none;
     background-color: #9c706f;
@@ -516,17 +516,17 @@
   }
 
   #slider3 #mainbox #imgbox5 {
-    width: 57%;
+    width: 60%;
     height: 100%;
     /* background-color: pink; */
   }
 
   #slider3 #mainbox #imgbox5 #picture3 {
-    width: 80%;
-    height: 50%;
+    width: 100%;
+    height: 40%;
     position: relative;
-    top: 25%;
-    left: 17.5%;
+    top: 30%;
+    left: 0;
     /* background-color: gray; */
     overflow: hidden;
   }
@@ -558,7 +558,7 @@
   }
 
   #slider3 #subbox #imgbox6 img{
-    width: 60%;
+    width: 90%;
     height: 60%;
     animation-duration: 1.4s;
     animation-fill-mode: forwards;
@@ -611,7 +611,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
   }
 
   #slider3 #subbox #buttonbox2 #arrow #left:hover {
@@ -628,7 +628,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
   }
 
   #slider3 #subbox #buttonbox2 #arrow #right:hover {
@@ -880,7 +880,7 @@
   #slider4 #content2 #description3 .balloon1 {
     position:relative;
     margin: 50px;
-    width:80%;
+    width:90%;
     height:50px;
     background:#0c4da2;
     border-radius: 50px;
@@ -897,34 +897,34 @@
     content:"";
     position:absolute;
     top:-10px;
-    left:50%;
+    left:30%;
    }
 
    #slider4 #content2 #description3 .balloon11 {
     top: 15%;
-    left: 1%;
+    left: -30%;
    }
 
    #slider4 #content2 #description3 .balloon12 {
     top: 30%;
-    left: 1%;
+    left: -30%;
    }
 
    #slider4 #content2 #description3 .balloon13 {
     top: 45%;
-    left: 1%;
+    left: -30%;
    }
    
 
   #slider4 #content2 #imagebox {
     width: 45%;
     height: 100%;
-    background-color: black;
+    /* background-color: pink; */
   }
 
   #slider4 #content2 #imagebox #picture2 {
     width: 65%;
-    height: 60%;
+    height: 45%;
     background-color: black;
     position: relative;
     left: 50%;
@@ -934,7 +934,7 @@
 
   #slider4 #content2 #imagebox #picture2 img {
     width: 100%;
-    height: 100%;
+    height: 80%;
     position: absolute;
   }
 
@@ -1039,7 +1039,7 @@
   #slider4 #content2 #description4 .balloon2 {
     position:relative;
     margin: 0;
-    width:80%;
+    width:90%;
     height:50px;
     background:#0c4da2;
     border-radius: 50px;
