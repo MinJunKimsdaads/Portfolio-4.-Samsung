@@ -668,6 +668,7 @@
   
   #footer_main ul {
     width: 100%;
+    margin-left: 1%;
     background-color: white;
   }
   
@@ -1353,6 +1354,7 @@
   
   #footer_main ul {
     width: 100%;
+    margin-left: 1%;
     background-color: white;
   }
   
@@ -1411,7 +1413,7 @@
   }
   
   #nav {
-    width: 50%;
+    width: 60%;
     display: flex;
     margin-left: 10%;
     display: block;
@@ -2020,7 +2022,7 @@
   footer {
     width: 100vw;
     height: 20vh;
-    background-color: pink;
+    /* background-color: pink; */
     margin-top: 3%;
   }
   
@@ -2028,14 +2030,14 @@
     width: 1440px;
     height: 100%;
     margin: 0 auto;
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     align-items: center;
   }
   
   #footer_main ul {
     width: 80%;
-    /* margin-left: 1%; */
+    margin-left: 1%;
     background-color: white;
   }
   
@@ -2058,7 +2060,7 @@
     height: 6vh;
     margin-top: 0;
     margin-left: 0;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     border-bottom:#c0c0c0 1px solid;
