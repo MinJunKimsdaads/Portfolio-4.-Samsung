@@ -18,6 +18,6 @@
 <p>2. 거의 대부분이 퍼블리싱이라 작업은 수월</p>
 <p>3. 최적화, 핵심인 js의 활용, 서버와의 통신 공부가 필요</p>
 
-<a href="https://web-portfolio-1--samsung-7xwyjq992llilepkkl.sel4.cloudtype.app/">Demo</a>
+<a href="https://minjunkimsdaads.github.io/Portfolio-4.-Samsung/">Demo</a>
 
 <h6>2023-11-29 노션 -> git으로 이동</h6>
